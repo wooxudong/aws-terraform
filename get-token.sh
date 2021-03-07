@@ -1,10 +1,5 @@
 #!/bin/bash
 
-OKTA_USERNAME=xudong.wu@thoughtworks.com
-OKTA_APP_ID=exk1c9mun89ywbfHW0h8
-OKTA_SERVER=thoughtworks.okta.com
-OKTA_APPTYPE=amazon_aws
-
 function script_usage() {
   cat <<EOF
 Please try to run ./get-token.sh init or ./get-token.sh run
