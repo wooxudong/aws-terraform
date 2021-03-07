@@ -1,29 +1,13 @@
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name = "name"
-    values = [
-      "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
-  }
-
-  filter {
-    name = "virtualization-type"
-    values = [
-      "hvm"]
-  }
-
-  owners = [
-    "099720109477"]
-  # Canonical
+provider "aws" {
+  profile = "dev"
+  region = "ap-southeast-1"
 }
 
-
-resource "aws_instance" "web" {
-  ami = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+resource "aws_instance" "example" {
+  ami           = "ami-0d06583a13678c938"
+  instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "ExampleInstance"
   }
 }
