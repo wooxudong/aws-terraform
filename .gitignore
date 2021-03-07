@@ -27,7 +27,10 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
-okta-config.sh
+
+
+#config files that includes credentials
+okta-config.txt
 
 # intellij
 .idea/
