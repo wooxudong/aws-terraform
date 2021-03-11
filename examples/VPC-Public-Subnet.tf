@@ -1,7 +1,9 @@
-provider "aws" {
-  profile = "dev"
-  region = "ap-southeast-2"
-}
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Create my own VPC and a public subnet under this VPC. assign the route table to configure internet access outbound
+# and route locally for instances within subnet.
+# @author: wooxudong
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 resource "aws_vpc" "main" {
   cidr_block = "172.32.0.0/16"

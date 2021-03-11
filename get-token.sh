@@ -41,7 +41,7 @@ function get_token() {
 
   . ./okta-config.txt
 
-  oktaauthpy3 -s "$SERVER" -u "$USER_NAME" -t "$APP_TYPE" -i "$APP_ID" | aws_role_credentials saml --profile dev --region ap-southeast-1
+  oktaauthpy3 -s "$SERVER" -u "$USER_NAME" -t "$APP_TYPE" -i "$APP_ID" | aws_role_credentials saml --profile dev --region ap-southeast-2
 
 }
 

@@ -21,5 +21,5 @@ A project to learn terraform and aws infra provisioning for fun :)
    ./get-token.sh run
    ```
    the credentials are by default generated and stored at  `~/.aws/credentials`
-   by default it is set to use region **ap-southeast-1**(Singapore)
+   by default it is set to use region **ap-southeast-2**(Syndney)
   
